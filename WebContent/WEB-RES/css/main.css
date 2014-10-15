@@ -133,7 +133,7 @@ hr {
 	width: 100%;
 	height: auto;
 	padding: 100px 0;
-	background: url(../images/youtube_broadcast_yourself.jpg) no-repeat scroll center center/cover
+	background: url(../images/microphone.jpg) no-repeat scroll center center/cover
 		rgba(0, 0, 0, 0);
 	color: #FFF;
 	background-attachment: fixed;
@@ -311,7 +311,7 @@ scale
 	width: 100%;
 	padding: 50px 0;
 	color: #fff;
-	background: url(../images/bivish-bg.jpg) no-repeat scroll top center;
+	background: url(../images/colorful_sound_waves.jpg) no-repeat scroll top center;
 	background-color: #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
