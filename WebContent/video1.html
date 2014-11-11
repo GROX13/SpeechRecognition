@@ -5,13 +5,13 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-	<div id = "player"></div>
 <section id="works">
 	
     	<script>
     	function seek(time){
     		player = document.getElementById("player");
-    		player.seekTo(time, true);
+    		console.log(player);
+    		yt.seekTo(time, true);
     		return true;
     	}
     	</script>
