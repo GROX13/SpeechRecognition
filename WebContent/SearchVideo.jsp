@@ -1,3 +1,6 @@
+<%@page import="search.VideoInfo"%>
+<%@page import="java.util.List"%>
+<%@page import="search.Videoes"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -94,65 +97,30 @@
     <section class="content-section text-center">
         <div class="skills">
             <div class="container">
-                <div class="col-md-4">
-                  <div class="skill-icon">
-                    <img src="https://i.ytimg.com/vi/XNnaxGFO18o.default.jpg" data-target="#project-slide" data-slide-to="1">
-                  </div>
-                  <div class="skill-details">
-                    <h2>Yesterday</h2>
-                    <p>The Beatles</p>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="skill-icon">
-                    <img src="https://i.ytimg.com/vi/eDdI7GhZSQA/default.jpg" data-target="#project-slide" data-slide-to="0">
-                  </div>
-                  <div class="skill-details">
-                    <h2>Hey Jude</h2>
-                    <p>The Beatles</p>
-                  </div>
-                </div>
-                
-                <div class="col-md-4">
-                  <div class="skill-icon">
-                    <img src="https://i.ytimg.com/vi/XNnaxGFO18o.default.jpg" data-target="#project-slide" data-slide-to="1">
-                  </div>
-                  <div class="skill-details">
-                    <h2>Yesterday</h2>
-                    <p>The Beatles</p>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="skill-icon">
-                    <img src="https://i.ytimg.com/vi/eDdI7GhZSQA/default.jpg" data-target="#project-slide" data-slide-to="0">
-                  </div>
-                  <div class="skill-details">
-                    <h2>Hey Jude</h2>
-                    <p>The Beatles</p>
-                  </div>
-                </div>                
-
-                <div class="col-md-4">
-                  <div class="skill-icon">
-                    <img src="https://i.ytimg.com/vi/XNnaxGFO18o.default.jpg" data-target="#project-slide" data-slide-to="1">
-                  </div>
-                  <div class="skill-details">
-                    <h2>Yesterday</h2>
-                    <p>The Beatles</p>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="skill-icon">
-                    <img src="https://i.ytimg.com/vi/eDdI7GhZSQA/default.jpg" data-target="#project-slide" data-slide-to="0">
-                  </div>
-                  <div class="skill-details">
-                    <h2>Hey Jude</h2>
-                    <p>The Beatles</p>
-                  </div>
-                </div>
+                <%
+                String searchValue = request.getParameter("searchValue");
+                List<VideoInfo> res = Videoes.getVideoes(searchValue);
+                String thmb;
+                String name;
+                String desc;
+                String URL;
+                for (int i=0; i<res.size(); i++){
+                	thmb = res.get(i).getThamb();
+                	name = res.get(i).getName();
+                	desc = res.get(i).getDescribtion();
+                	URL = res.get(i).getURL();
+                	%>
+	                <div class="col-md-4">
+	                  <div class="skill-icon">
+	                    <img src=<%=thmb %> >
+	                  </div>
+	                  <div class="skill-details">
+	                    <h2><%=name %></h2>
+	                    <p><%=desc %></p>
+	                  </div>
+	                </div>
+                <%} %>
+               
 
                 <!-- <div class="col-md-6 col-md-offset-3">
                   <div class="promising">

@@ -36,14 +36,14 @@ public class Search extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String searchValue = request.getParameter("searchValue");
+//		String searchValue = request.getParameter("searchValue");
 //		List<VideoInfo> res = new ArrayList<VideoInfo>();
 //		for(int i=0; i<Videoes.vids.size(); i++){
 //			if(Videoes.vids.get(i).match(searchValue)){
 //				res.add(Videoes.vids.get(i));
 //			}
 //		}
-		Videoes.getVideoes(searchValue);
+//		Videoes.getVideoes(searchValue);
 	}
 
 }
