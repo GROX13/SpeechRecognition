@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+<div id="player"></div>
+
+<script>
+	// 2. This code loads the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// 3. This function creates an <iframe> (and YouTube player)
+	//    after the API code downloads.
+	var player;
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('player', {
+			height : '390',
+			width : '640',
+			videoId : 'DVg2EJvvlF8',
+			events : {
+				'onReady' : onPlayerReady,
+				'onStateChange' : onPlayerStateChange
+			}
+		});
+	}
+	function onYouTubePlayerReady(playerId) {
+		ytplayer = document.getElementById("myytplayer");
+		console.log(ytplayer);
+	}
+	// 4. The API will call this function when the video player is ready.
+	function onPlayerReady(event) {
+		event.target.playVideo();
+	}
+
+	// 5. The API calls this function when the player's state changes.
+	//    The function indicates that when playing a video (state=1),
+	//    the player should play for six seconds and then stop.
+	var done = false;
+	function onPlayerStateChange(event) {
+		if (event.data == YT.PlayerState.PLAYING && !done) {
+			setTimeout(stopVideo, 6000);
+			done = true;
+		}
+	}
+	function stopVideo() {
+		player.stopVideo();
+	}
+
+	function playerSeekTo(player, seconds) {
+		player.seekTo(seconds);
+	}
+</script>
+<a href="#" onclick="playerSeekTo (player,56); return false">  Imagine there's </a>
+<a href="#" onclick="playerSeekTo (player,57); return false"> no heaven</a>
+<a href="#" onclick="playerSeekTo (player,62); return false"> It's easy </a>
+<a href="#" onclick="playerSeekTo (player,63); return false">  if you </a>
+<a href="#" onclick="playerSeekTo (player,64); return false"> try</a>
+<a href="#" onclick="playerSeekTo (player,69); return false"> No hell </a>
+<a href="#" onclick="playerSeekTo (player,70); return false"> below us</a>
+<a href="#" onclick="playerSeekTo (player,75); return false"> Above us  </a>
+<a href="#" onclick="playerSeekTo (player,77); return false"> only sky</a>
+<a href="#" onclick="playerSeekTo (player,80); return false"> Imagine all </a>
+<a href="#" onclick="playerSeekTo (player,83); return false"> the people</a>
+<a href="#" onclick="playerSeekTo (player,87); return false"> Living for </a>
+<a href="#" onclick="playerSeekTo (player,89); return false">  today...</a>
+<a href="#" onclick="playerSeekTo (player,94); return false"> Imagine there's  </a>
+<a href="#" onclick="playerSeekTo (player,95); return false"> no countries</a>
+<a href="#" onclick="playerSeekTo (player,100); return false">  It isn't hard </a>
+<a href="#" onclick="playerSeekTo (player,102); return false"> to do</a>
+<a href="#" onclick="playerSeekTo (player,106); return false"> Nothing to kill </a>
+<a href="#" onclick="playerSeekTo (player,108); return false"> or die for</a>
+<a href="#" onclick="playerSeekTo (player,113); return false"> And no religion </a>
+<a href="#" onclick="playerSeekTo (player,115); return false"> too</a>
+<a href="#" onclick="playerSeekTo (player,119); return false"> Imagine </a>
+<a href="#" onclick="playerSeekTo (player,120); return false"> all the people</a>
+<a href="#" onclick="playerSeekTo (player,124); return false"> Living life </a>
+<a href="#" onclick="playerSeekTo (player,126); return false"> in peace...</a>
+<a href="#" onclick="playerSeekTo (player,132); return false"> You may say </a>
+<a href="#" onclick="playerSeekTo (player,134); return false"> I'm a dreamer</a>
+<a href="#" onclick="playerSeekTo (player,138); return false"> But I'm not the </a>
+<a href="#" onclick="playerSeekTo (player,140); return false"> only one</a>
+<a href="#" onclick="playerSeekTo (player,144); return false"> I hope someday </a>
+<a href="#" onclick="playerSeekTo (player,146); return false"> you'll join us</a>
+<a href="#" onclick="playerSeekTo (player,151); return false"> And the world </a>
+<a href="#" onclick="playerSeekTo (player,153); return false"> will be as one</a>
+<a href="#" onclick="playerSeekTo (player,157); return false"> Imagine </a>
+<a href="#" onclick="playerSeekTo (player,158); return false"> no possessions</a>
+<a href="#" onclick="playerSeekTo (player,164); return false"> I wonder if </a>
+<a href="#" onclick="playerSeekTo (player,166); return false"> you can</a>
+<a href="#" onclick="playerSeekTo (player,170); return false"> No need </a>
+<a href="#" onclick="playerSeekTo (player,171); return false"> for greed </a>
+<a href="#" onclick="playerSeekTo (player,172); return false"> or hunger</a>
+<a href="#" onclick="playerSeekTo (player,175); return false"> A brotherhood </a>
+<a href="#" onclick="playerSeekTo (player,177); return false"> of man</a>
+<a href="#" onclick="playerSeekTo (player,182); return false"> Imagine </a>
+<a href="#" onclick="playerSeekTo (player,183); return false"> all the people</a>
+<a href="#" onclick="playerSeekTo (player,188); return false"> Sharing all </a>
+<a href="#" onclick="playerSeekTo (player,190); return false"> the world...</a>
+<a href="#" onclick="playerSeekTo (player,195); return false"> You may say </a>
+<a href="#" onclick="playerSeekTo (player,197); return false"> I'm a dreamer</a>
+<a href="#" onclick="playerSeekTo (player,202); return false"> But I'm not the only one</a>
+<a href="#" onclick="playerSeekTo (player,208); return false"> I hope someday </a>
+<a href="#" onclick="playerSeekTo (player,210); return false"> you'll join us</a>
+<a href="#" onclick="playerSeekTo (player,214); return false"> And the world </a>
+<a href="#" onclick="playerSeekTo (player,217); return false"> will live as one</a>
+
+</body>
+</html>
