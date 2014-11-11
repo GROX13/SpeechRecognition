@@ -5,20 +5,30 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
+	<div id = "player"></div>
 <section id="works">
-    	
+	
+    	<script>
+    	function seek(time){
+    		player = document.getElementById("player");
+    		player.seekTo(time, true);
+    		return true;
+    	}
+    	</script>
         <div class="container">
             <div id="project-slide" class="carousel slide content-section" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item">
                     <div class="col-md-8">
-                        <iframe width="640" height="480" src="//www.youtube.com/embed/eDdI7GhZSQA" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="player" type="text/html" width="640" height="480" src="//www.youtube.com/embed/eDdI7GhZSQA" frameborder="0" allowfullscreen></iframe>
                     </div>
 					
                     <div class="col-md-4">
                         <div class="project-details">
                         <h2>Hey Jude<span>THE BEATLES</span></h2>
-                        <p>
+                            <p>
+                        	<a href="#" onclick="seek(70)">Link to 1 minutes 10 seconds</a>
+                        
                         	Hey, Jude, don't make it bad
 							Take a sad song and make it better
 							Remember to let her into your heart
