@@ -109,13 +109,14 @@
                 	name = res.get(i).getName();
                 	desc = res.get(i).getDescribtion();
                 	URL = res.get(i).getURL();
+                	
                 	%>
 	                <div class="col-md-4">
 	                  <div class="skill-icon">
 	                    <img src=<%=thmb %> >
 	                  </div>
 	                  <div class="skill-details">
-	                    <h2><%=name %></h2>
+	                    <h2><a href="<%=URL %>" > <%=name %> </a></h2>
 	                    <p><%=desc %></p>
 	                  </div>
 	                </div>

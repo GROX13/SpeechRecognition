@@ -21,7 +21,7 @@ public class VideoInfo {
 		StringTokenizer tk = new StringTokenizer(searchValue);
 		while(tk.hasMoreTokens()){
 			String token = tk.nextToken();
-			if(!text.contains(token)) return false;
+			if(!(text.contains(token) || name.contains(token))) return false;
 		}
 		
 		return true;
