@@ -3,7 +3,7 @@
 <body>
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <div id="player"></div>
-
+<p>
 <script>
 	// 2. This code loads the IFrame Player API code asynchronously.
 	var tag = document.createElement('script');
@@ -52,7 +52,9 @@
 	function playerSeekTo(player, seconds) {
 		player.seekTo(seconds);
 	}
+	
 </script>
+</p>
 <a href="#" onclick="playerSeekTo (player,3); return false">Set </a>
 <a href="#" onclick="playerSeekTo (player,4); return false">fire </a>
 <a href="#" onclick="playerSeekTo (player,5); return false">to your
