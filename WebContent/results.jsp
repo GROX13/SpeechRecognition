@@ -38,15 +38,24 @@
 	 <%
      String searchValue = request.getParameter("searchValue");
      List<VideoInfo> res = Videoes.getVideoes(searchValue);
-     String thmb;
-     String name;
-     String desc;
-     String URL;
-     for (int i=0; i<res.size(); i++){
-     	thmb = res.get(i).getThamb();
-     	name = res.get(i).getName();
-     	desc = res.get(i).getDescribtion();
-     	URL = res.get(i).getURL();
+     if(res.size() == 0){
+    	 %>
+	    	<div class="jumbotron">
+				<h1>Hello, world!</h1>
+				<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+			</div>
+    	 <%
+     } else {
+	     String thmb;
+	     String name;
+	     String desc;
+	     String URL;
+	     for (int i=0; i<res.size(); i++){
+	     	thmb = res.get(i).getThamb();
+	     	name = res.get(i).getName();
+	     	desc = res.get(i).getDescribtion();
+	     	URL = res.get(i).getURL();
      	%>
 	
 		<div class="col-sm-6 col-md-4">
@@ -59,6 +68,7 @@
 				</div>
 			</div>
 		</div>
-		<%} %>
+		<%}
+	   }%>
 </body>
 </html>
