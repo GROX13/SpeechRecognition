@@ -87,6 +87,61 @@ public class Initializer implements ServletContextListener {
 		name = "My Love Is A Fever";
 		desc = "William Shakespeare";
 		Videoes.vids.add(new VideoInfo(text.toLowerCase(), thambURL, vidURL, name, desc));
+	
+		text = "Set fire to your hair "+
+				"Poke a stick at a grizzly bear "+
+				"Eat medicine that's out of date "+
+				"Use your private parts as piranha bait "+
+				"Dumb ways to die, so many dumb ways to die, "+
+				"dumb ways to di-i-i-ie, so many dumb ways to die "+
+				"Get your toast out with a fork "+
+				"Do your own electrical work "+
+				"Teach yourself how to fly "+
+				"Eat a two week old unrefrigerated pie "+
+				"Dumb ways to die, so many dumb ways to die, "+
+				"dumb ways to di-i-i-ie, so many dumb ways to die "+
+				"Invite a psycho-killer inside "+
+				"Scratch a drug dealer's brand new ride "+
+				"Take your helmet off in outer space "+
+				"Use your clothes dryer as a hiding place "+
+				"Dumb ways to die, so many dumb ways to die, "+
+				"dumb ways to di-i-i-ie, so many dumb ways to die "+
+				"Keep a rattlesnake as pet "+
+				"Sell both your kidneys on the internet "+
+				"Eat a tube of superglue "+
+				"Keep a rattlesnake as pet "+
+				"I wonder what's this red button do? "+
+				"Dumb ways to die, so many dumb ways to die, "+
+				"dumb ways to di-i-i-ie, so many dumb ways to die "+
+				"Dress up like a moose during hunting season "+
+				"Disturb a nest of wasps for no good reason "+
+				"Stand on the edge of a train station platform "+
+				"Drive around the boom gates at a level crossing "+
+				"Run across the tracks between the platforms "+
+				"They may not rhyme but they're quite possibly "+
+				"Dumbest ways to die Dumbest ways to die "+
+				"Dumbest ways to di-i-i-ie So many dumb So many dumb ways to die "+
+				"Be safe around trains. message from Metro";
+		thambURL = "https://i.ytimg.com/vi/iKdHLPtdR0U/mqdefault.jpg";
+		vidURL = "DumbWaysToDie.html";
+		name = "Dumb Ways to Die";
+		desc = "";
+		Videoes.vids.add(new VideoInfo(text.toLowerCase(), thambURL, vidURL, name, desc));
+	
+		text = "So, so you think you can tell Heaven from Hell, Blue skies from "+
+				"pain. Can you tell a green field From a cold steel rail? A smile from a "+
+				"veil? Do you think you can tell? And did they get you to trade "+
+				"Your heroes for ghosts? Hot ashes for trees? Hot air for a cool breeze? "+
+				"Cold comfort for change? And did you exchange A walk on part in "+
+				"the war For a lead role in a cage? How I wish, how I wish you were here. "+
+				"We're just two lost souls Swimming in a fish bowl, Year after year, "+
+				"Running over the same old ground. What have we found? The same old fears. "+
+				"Wish you were here.";
+		thambURL = "https://i.ytimg.com/vi/iKdHLPtdR0U/mqdefault.jpg";
+		vidURL = "DumbWaysToDie.html";
+		name = "Dumb Ways to Die";
+		desc = "";
+		Videoes.vids.add(new VideoInfo(text.toLowerCase(), thambURL, vidURL, name, desc));
 	}
 
 }
