@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html>
-<body>
-<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-<div id="player"></div>
-<p>
-<script src = "WEB-RES/javascript/seek.js">
-	</script>
-</p>
-<a href="#" onclick="playerSeekTo (player,3); return false">Set </a>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<link href="WEB-RES/css/bootstrap.min.css" rel="stylesheet">
+		
+		<title>Insert title here</title>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-default" role="navigation">
+  			<div class="container-fluid">
+   				<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="#">Home</a>
+    			</div>
+
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      				<form class="navbar-form navbar-left" role="search">
+        				<div class="form-group">
+          					<input type="text" class="form-control" placeholder="Search">
+        				</div>
+        				<button type="submit" class="btn btn-default">Submit</button>
+      				</form>
+	      			<ul class="nav navbar-nav navbar-right">
+	        			<li><a href="#">Link</a></li>
+	        			<li><a href="#">Link</a></li>
+	      			</ul>
+    			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+		<div class="well">
+			<table class="table">
+				<tr>
+					<td>
+						<div id="player"></div>
+					</td>
+					<td>
+						<div class="media-body">
+							<div>
+								<a href="#" onclick="playerSeekTo (player,3); return false">Set </a>
 <a href="#" onclick="playerSeekTo (player,4); return false">fire </a>
 <a href="#" onclick="playerSeekTo (player,5); return false">to your
 </a>
 <a href="#" onclick="playerSeekTo (player,6); return false">hair</a>
-<a href="#" onclick="playerSeekTo (player,7); return false">Poke a
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,7); return false">Poke a
 stick </a>
 <a href="#" onclick="playerSeekTo (player,8); return false">at a </a>
 <a href="#" onclick="playerSeekTo (player,9); return false">grizzly
 </a>
 <a href="#" onclick="playerSeekTo (player,10); return false">bear</a>
-<a href="#" onclick="playerSeekTo (player,11); return false">Eat </a>
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,11); return false">Eat </a>
 <a href="#" onclick="playerSeekTo (player,12); return false">medicine
 </a>
 <a href="#" onclick="playerSeekTo (player,13); return false">that's
 out of </a>
 <a href="#" onclick="playerSeekTo (player,14); return false">date</a>
-<a href="#" onclick="playerSeekTo (player,15); return false">Use
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,15); return false">Use
 your private </a>
 <a href="#" onclick="playerSeekTo (player,16); return false">parts
 as </a>
 <a href="#" onclick="playerSeekTo (player,17); return false">piranha
 </a>
 <a href="#" onclick="playerSeekTo (player,18); return false">bait</a>
-<a href="#" onclick="playerSeekTo (player,19); return false">Dumb </a>
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,19); return false">Dumb </a>
 <a href="#" onclick="playerSeekTo (player,20); return false">ways to
 </a>
 <a href="#" onclick="playerSeekTo (player,21); return false">die, </a>
@@ -41,7 +87,9 @@ as </a>
 ways </a>
 <a href="#" onclick="playerSeekTo (player,24); return false">to die,
 </a>
-<a href="#" onclick="playerSeekTo (player,26); return false">dumb </a>
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,26); return false">dumb </a>
 <a href="#" onclick="playerSeekTo (player,27); return false">ways to
 </a>
 <a href="#" onclick="playerSeekTo (player,28); return false">di-i-i-ie,
@@ -51,29 +99,39 @@ ways </a>
 <a href="#" onclick="playerSeekTo (player,31); return false">dumb
 ways to </a>
 <a href="#" onclick="playerSeekTo (player,32); return false">die</a>
-<a href="#" onclick="playerSeekTo (player,35); return false">Get
+							</div>
+							<div>
+		<a href="#" onclick="playerSeekTo (player,35); return false">Get
 your </a>
 <a href="#" onclick="playerSeekTo (player,36); return false">toast
 out </a>
 <a href="#" onclick="playerSeekTo (player,37); return false">with a
 fork</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,39); return false">Do your
 </a>
 <a href="#" onclick="playerSeekTo (player,40); return false">own
 electrical </a>
 <a href="#" onclick="playerSeekTo (player,41); return false">work</a>
-<a href="#" onclick="playerSeekTo (player,43); return false">Teach </a>
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,43); return false">Teach </a>
 <a href="#" onclick="playerSeekTo (player,44); return false">yourself
 how </a>
 <a href="#" onclick="playerSeekTo (player,45); return false">to fly</a>
-<a href="#" onclick="playerSeekTo (player,46); return false">Eat a </a>
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,46); return false">Eat a </a>
 <a href="#" onclick="playerSeekTo (player,47); return false">two
 week </a>
 <a href="#" onclick="playerSeekTo (player,48); return false">old </a>
 <a href="#" onclick="playerSeekTo (player,49); return false">unrefrigerated
 </a>
 <a href="#" onclick="playerSeekTo (player,50); return false">pie</a>
-<a href="#" onclick="playerSeekTo (player,51); return false">Dumb </a>
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,51); return false">Dumb </a>
 <a href="#" onclick="playerSeekTo (player,52); return false">ways to
 </a>
 <a href="#" onclick="playerSeekTo (player,53); return false">die, </a>
@@ -83,7 +141,9 @@ week </a>
 ways </a>
 <a href="#" onclick="playerSeekTo (player,56); return false">to die,
 </a>
-<a href="#" onclick="playerSeekTo (player,58); return false">dumb </a>
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,58); return false">dumb </a>
 <a href="#" onclick="playerSeekTo (player,59); return false">ways to
 </a>
 <a href="#" onclick="playerSeekTo (player,60); return false">di-i-i-ie,
@@ -93,21 +153,29 @@ dumb </a>
 <a href="#" onclick="playerSeekTo (player,63); return false">ways to
 </a>
 <a href="#" onclick="playerSeekTo (player,64); return false">die</a>
-<a href="#" onclick="playerSeekTo (player,65); return false">Invite
+							</div>
+							<div>
+								<a href="#" onclick="playerSeekTo (player,65); return false">Invite
 a </a>
 <a href="#" onclick="playerSeekTo (player,66); return false">psycho-killer
 </a>
 <a href="#" onclick="playerSeekTo (player,67); return false">inside</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,69); return false">Scratch
 a </a>
 <a href="#" onclick="playerSeekTo (player,70); return false">drug
 dealer's </a>
 <a href="#" onclick="playerSeekTo (player,71); return false">brand
 new ride</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,73); return false">Take
 your helmet </a>
 <a href="#" onclick="playerSeekTo (player,74); return false">off in outer </a>
 <a href="#" onclick="playerSeekTo (player,76); return false">space</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,76); return false">Use </a>
 <a href="#" onclick="playerSeekTo (player,77); return false">your
 clothes </a>
@@ -115,6 +183,8 @@ clothes </a>
 as a </a>
 <a href="#" onclick="playerSeekTo (player,79); return false">hiding
 place</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,81); return false">Dumb
 ways </a>
 <a href="#" onclick="playerSeekTo (player,82); return false">to die,
@@ -125,6 +195,8 @@ ways </a>
 ways </a>
 <a href="#" onclick="playerSeekTo (player,86); return false">to die,
 </a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,88); return false">dumb </a>
 <a href="#" onclick="playerSeekTo (player,89); return false">ways to
 </a>
@@ -135,28 +207,45 @@ dumb </a>
 <a href="#" onclick="playerSeekTo (player,93); return false">ways to
 </a>
 <a href="#" onclick="playerSeekTo (player,94); return false">die</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,95); return false">Keep a
 </a>
 <a href="#" onclick="playerSeekTo (player,96); return false">rattlesnake
 </a>
 <a href="#" onclick="playerSeekTo (player,97); return false">as pet</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,99); return false">Sell
 both </a>
 <a href="#" onclick="playerSeekTo (player,100); return false">your
 kidneys on </a>
 <a href="#" onclick="playerSeekTo (player,101); return false">the
 internet</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,103); return false">Eat a
 </a>
 <a href="#" onclick="playerSeekTo (player,104); return false">tube
 of </a>
 <a href="#" onclick="playerSeekTo (player,105); return false">superglue</a>
+							</div>
+							<div>
+<a href="#" onclick="playerSeekTo (player,95); return false">Keep a
+</a>
+<a href="#" onclick="playerSeekTo (player,96); return false">rattlesnake
+</a>
+<a href="#" onclick="playerSeekTo (player,97); return false">as pet</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,107); return false">I
 wonder </a>
 <a href="#" onclick="playerSeekTo (player,108); return false">what's
 this red </a>
 <a href="#" onclick="playerSeekTo (player,109); return false">button
 do?</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,111); return false">Dumb </a>
 <a href="#" onclick="playerSeekTo (player,112); return false">ways
 to </a>
@@ -167,6 +256,8 @@ many </a>
 ways </a>
 <a href="#" onclick="playerSeekTo (player,116); return false">to
 die, </a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,118); return false">dumb </a>
 <a href="#" onclick="playerSeekTo (player,119); return false">ways
 to </a>
@@ -178,6 +269,8 @@ dumb </a>
 <a href="#" onclick="playerSeekTo (player,126); return false">ways
 to </a>
 <a href="#" onclick="playerSeekTo (player,127); return false">die</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,128); return false">Dress
 up </a>
 <a href="#" onclick="playerSeekTo (player,129); return false">like a
@@ -187,6 +280,9 @@ up </a>
 <a href="#" onclick="playerSeekTo (player,131); return false">during
 hunting </a>
 <a href="#" onclick="playerSeekTo (player,132); return false">season</a>
+							</div>
+							<div>
+
 <a href="#" onclick="playerSeekTo (player,134); return false">Disturb
 a </a>
 <a href="#" onclick="playerSeekTo (player,135); return false">nest
@@ -196,6 +292,8 @@ for </a>
 <a href="#" onclick="playerSeekTo (player,137); return false">no
 good </a>
 <a href="#" onclick="playerSeekTo (player,138); return false">reason</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,141); return false">Stand
 on the </a>
 <a href="#" onclick="playerSeekTo (player,142); return false">edge
@@ -203,24 +301,32 @@ of a </a>
 <a href="#" onclick="playerSeekTo (player,143); return false">train
 station </a>
 <a href="#" onclick="playerSeekTo (player,144); return false">platform</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,145); return false">Drive
 around the </a>
 <a href="#" onclick="playerSeekTo (player,145); return false">boom </a>
 <a href="#" onclick="playerSeekTo (player,146); return false">gates
 at a level </a>
 <a href="#" onclick="playerSeekTo (player,147); return false">crossing</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,148); return false">Run </a>
 <a href="#" onclick="playerSeekTo (player,149); return false">across
 the tracks </a>
 <a href="#" onclick="playerSeekTo (player,150); return false">between
 the </a>
 <a href="#" onclick="playerSeekTo (player,151); return false">platforms</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,152); return false">They
 may not </a>
 <a href="#" onclick="playerSeekTo (player,153); return false">rhyme
 but they're </a>
 <a href="#" onclick="playerSeekTo (player,154); return false">quite
 possibly</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,156); return false">Dumbest
 </a>
 <a href="#" onclick="playerSeekTo (player,157); return false">ways
@@ -231,6 +337,8 @@ to </a>
 <a href="#" onclick="playerSeekTo (player,161); return false">ways
 to </a>
 <a href="#" onclick="playerSeekTo (player,162); return false">die</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,163); return false">Dumbest
 </a>
 <a href="#" onclick="playerSeekTo (player,164); return false">ways
@@ -244,11 +352,69 @@ many dumb </a>
 <a href="#" onclick="playerSeekTo (player,173); return false">ways
 to </a>
 <a href="#" onclick="playerSeekTo (player,174); return false">die</a>
+							</div>
+							<div>
 <a href="#" onclick="playerSeekTo (player,176); return false">Be
 safe </a>
 <a href="#" onclick="playerSeekTo (player,177); return false">around
 trains. </a>
 <a href="#" onclick="playerSeekTo (player,178); return false">message
 from Metro</a>
-</body>
+							</div>
+						</div>	
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<script>
+			// 2. This code loads the IFrame Player API code asynchronously.
+			var tag = document.createElement('script');
+		
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		
+			// 3. This function creates an <iframe> (and YouTube player)
+			//    after the API code downloads.
+			var player;
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player('player', {
+					height : '390',
+					width : '640',
+					videoId : 'v4A_18kf4PY',
+					events : {
+						'onReady' : onPlayerReady,
+						'onStateChange' : onPlayerStateChange
+					}
+				});
+			}
+			function onYouTubePlayerReady(playerId) {
+				ytplayer = document.getElementById("myytplayer");
+				console.log(ytplayer);
+			}
+			// 4. The API will call this function when the video player is ready.
+			function onPlayerReady(event) {
+				event.target.playVideo();
+			}
+		
+			// 5. The API calls this function when the player's state changes.
+			//    The function indicates that when playing a video (state=1),
+			//    the player should play for six seconds and then stop.
+			var done = false;
+			function onPlayerStateChange(event) {
+				if (event.data == YT.PlayerState.PLAYING && !done) {
+					setTimeout(stopVideo, 6000);
+					done = true;
+				}
+			}
+			function stopVideo() {
+				player.stopVideo();
+			}
+		
+			function playerSeekTo(player, seconds) {
+				player.seekTo(seconds);
+			}
+		</script>
+	</body>
 </html>
