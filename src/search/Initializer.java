@@ -89,7 +89,7 @@ public class Initializer implements ServletContextListener {
 				"Imagine all the people Sharing all the world "+
 				"You may say I'm a dreamer But I'm not the only one "+
 				"I hope someday you'll join us And the world will live as one";
-		thambURL = "https://i.ytimg.com/vi/DVg2EJvvlF8/default.jpg";
+		thambURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_86V5fA_cJ6BNbr4higQTUVWPaQBQKRmIZwYc5J_m3tIAtl4QKw";
 		vidURL = "ImagineVideo.html";
 		name = "Imagine";
 		desc = "John Lennon";
@@ -111,9 +111,9 @@ public class Initializer implements ServletContextListener {
 				"My thoughts and my discourse as madmens are At random from the truth vainly expressed "+
 				"For I have sworn thee fair and thought thee bright Who art as black as hell as dark as night";
 		thambURL = "https://i.ytimg.com/vi/OBQNs89mUls/mqdefault.jpg";
-		vidURL = "video1.html";
+		vidURL = "Sonnet_147.html";
 		name = "My Love Is A Fever";
-		desc = "William Shakespeare - Sonnet 147";
+		desc = "William Shakespeare";
 		Videoes.vids.add(new VideoInfo(text, thambURL, vidURL, name, desc));
 	}
 
