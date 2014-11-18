@@ -125,7 +125,7 @@ public class Initializer implements ServletContextListener {
 		thambURL = "https://i.ytimg.com/vi/iKdHLPtdR0U/mqdefault.jpg";
 		vidURL = "DumbWaysToDie.html";
 		name = "Dumb Ways to Die";
-		desc = "";
+		desc = " ";
 		Videoes.vids.add(new VideoInfo(text.toLowerCase(), thambURL, vidURL, name, desc));
 	
 		text = "So, so you think you can tell Heaven from Hell, Blue skies from "+
