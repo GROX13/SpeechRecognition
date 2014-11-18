@@ -36,7 +36,7 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 	 <%
-     String searchValue = request.getParameter("searchValue");
+     String searchValue = request.getParameter("searchValue").toLowerCase();
      List<VideoInfo> res = Videoes.getVideoes(searchValue);
      if(res.size() == 0){
     	 %>
