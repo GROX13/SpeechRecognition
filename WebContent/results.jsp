@@ -30,7 +30,7 @@
      			</form>
       			<ul class="nav navbar-nav navbar-right">
         			<li><a href="about.html">About Us</a></li>
-        			<li><a href="#">Link</a></li>
+        			<li><a href="contact.html">Contact Us</a></li>
       			</ul>
    			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
