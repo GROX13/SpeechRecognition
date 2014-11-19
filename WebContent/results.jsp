@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@page import="search.VideoInfo"%>
 <%@page import="java.util.List"%>
 <%@page import="search.Videoes"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="WEB-RES/css/bootstrap.min.css" rel="stylesheet">
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link href="WEB-RES/images/icons/1313.ico" rel="shortcut icon" >
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Search Result</title>
 	</head>
 <body>
@@ -35,12 +35,13 @@
    			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
+	<div class="row col-lg-12">
 	 <%
-     String searchValue = request.getParameter("searchValue").toLowerCase();
+     String searchValue = request.getParameter("searchValue");
      List<VideoInfo> res = Videoes.getVideoes(searchValue);
      if(res.size() == 0){
     	 %>
-	    	<div class="jumbotron">
+	    	<div class="page-header text-center">
 				<h1>No Result for '<%=searchValue %>'</h1>
 			</div>
     	 <%
@@ -68,5 +69,23 @@
 		</div>
 		<%}
 	   }%>
+	   </div>
+	   
+	   <section id="contact" class="text-center">
+	        <div class="contact-body">
+	        	<div class="container">
+	                <div class="row">
+		                <div class="contact-detail">
+		                    <ul class="list-inline">
+		                        <li><span class="glyphicon glyphicon glyphicon-map-marker"></span> Tbilisi</li>
+		                        <li><span class="glyphicon glyphicon-earphone"></span>+995 999 99 99 99</li>
+		                        <li><span class="glyphicon glyphicon-send"></span><a href="mailto:mail@gmail.com"> mail@gmail.com</a></li>
+		                    </ul>
+		                </div>
+	                </div>
+	            </div>
+	        </div>   
+        </section>	
+        
 </body>
 </html>
