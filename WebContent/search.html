@@ -192,7 +192,7 @@
 		  function match(video, query){
 		    var tokens = query.split(" ");
 		    for(var i=0; i<tokens.length; i++){
-		      if(video.text.indexOf(tokens[i]) === -1 && video.name.indexOf(tokens[i]) === -1){
+		      if(video.text.toLowerCase().indexOf(tokens[i].toLowerCase()) === -1 && video.name.toLowerCase().indexOf(tokens[i].toLowerCase()) === -1){
 		        return false;
 		      }
 		    }
@@ -221,7 +221,6 @@
 
 		  function showResult(result){
 		    var html = "";
-		    alert("result length: "+result.length);
 		    for(var i=0; i<result.length; i++){
 		      html += generateVideoHtml(result[i]);
 		    }
@@ -230,11 +229,8 @@
 		  }
 
 		  var videoes = makeVideoes();
-		  alert("videoes: "+videoes.length);
 
 		  function searchVideos(query){
-		    alert(query);
-		    // var searchQuery = pageContext.findAttribute("searchValue");
 		    if(query === null || query === undefined){
 		      query = " ";
 		    }
