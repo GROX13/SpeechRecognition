@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 		<link href="WEB-RES/css/bootstrap.min.css" rel="stylesheet">
-		<link href="WEB-RES/images/icons/1313.ico" rel="shortcut icon" >	
+		<link href="WEB-RES/images/icons/1313.ico" rel="shortcut icon" >
 		<title>Imagine</title>
 	</head>
 	<body>
@@ -14,10 +14,10 @@
 	    			<div class="navbar-header">
 	      				<a class="navbar-brand" href="index.html">Home</a>
 	    			</div>
-	
+
 	    			<!-- Collect the nav links, forms, and other content for toggling -->
 	    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      				<form class="navbar-form navbar-left" role="search" action="results.jsp">
+	      				<form class="navbar-form navbar-left" role="search" action="search.html">
 	        				<div class="form-group">
 	          					<input type="text" class="form-control" name="searchValue" placeholder="Search">
 	        				</div>
@@ -31,10 +31,10 @@
 				</div><!-- /.container-fluid -->
 			</nav>
 		</section>
-		
+
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 		<div class="well">
-			<div> 
+			<div>
 				<h1>John Lennon <small> Imagine All The People</small></h1>
 			</div>
 			<table class="table">
@@ -65,19 +65,19 @@
 							</div>
 							<div>
 								<a href="#" onclick="playerSeekTo (player,94); return false"> Imagine there's  </a>
-								<a href="#" onclick="playerSeekTo (player,95); return false"> no countries</a>								
+								<a href="#" onclick="playerSeekTo (player,95); return false"> no countries</a>
 								<a href="#" onclick="playerSeekTo (player,100); return false">  It isn't hard </a>
 								<a href="#" onclick="playerSeekTo (player,102); return false"> to do</a>
 							</div>
 							<div>
 								<a href="#" onclick="playerSeekTo (player,106); return false"> Nothing to kill </a>
-								<a href="#" onclick="playerSeekTo (player,108); return false"> or die for</a>							
+								<a href="#" onclick="playerSeekTo (player,108); return false"> or die for</a>
 								<a href="#" onclick="playerSeekTo (player,113); return false"> And no religion </a>
 								<a href="#" onclick="playerSeekTo (player,115); return false"> too</a>
 							</div>
 							<div>
 								<a href="#" onclick="playerSeekTo (player,119); return false"> Imagine </a>
-								<a href="#" onclick="playerSeekTo (player,120); return false"> all the people</a>							
+								<a href="#" onclick="playerSeekTo (player,120); return false"> all the people</a>
 								<a href="#" onclick="playerSeekTo (player,124); return false"> Living life </a>
 								<a href="#" onclick="playerSeekTo (player,126); return false"> in peace...</a>
 							</div>
@@ -93,9 +93,9 @@
 								<a href="#" onclick="playerSeekTo (player,151); return false"> And the world </a>
 								<a href="#" onclick="playerSeekTo (player,153); return false"> will be as one</a>
 							</div>
-							<div>			
+							<div>
 								<a href="#" onclick="playerSeekTo (player,157); return false"> Imagine </a>
-								<a href="#" onclick="playerSeekTo (player,158); return false"> no possessions</a>							
+								<a href="#" onclick="playerSeekTo (player,158); return false"> no possessions</a>
 								<a href="#" onclick="playerSeekTo (player,164); return false"> I wonder if </a>
 								<a href="#" onclick="playerSeekTo (player,166); return false"> you can</a>
 							</div>
@@ -108,7 +108,7 @@
 							</div>
 							<div>
 								<a href="#" onclick="playerSeekTo (player,182); return false"> Imagine </a>
-								<a href="#" onclick="playerSeekTo (player,183); return false"> all the people</a>							
+								<a href="#" onclick="playerSeekTo (player,183); return false"> all the people</a>
 								<a href="#" onclick="playerSeekTo (player,188); return false"> Sharing all </a>
 								<a href="#" onclick="playerSeekTo (player,190); return false"> the world...</a>
 							</div>
@@ -123,12 +123,12 @@
 								<a href="#" onclick="playerSeekTo (player,214); return false"> And the world </a>
 								<a href="#" onclick="playerSeekTo (player,217); return false"> will live as one</a>
 							</div>
-						</div>	
+						</div>
 					</td>
 				</tr>
 			</table>
 		</div>
-		
+
 		<section id="contact" class="text-center">
 	        <div class="contact-body">
 	        	<div class="container">
@@ -142,17 +142,17 @@
 		                </div>
 	                </div>
 	            </div>
-	        </div>   
-        </section>	
-		
+	        </div>
+        </section>
+
 		<script>
 			// 2. This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');
-		
+
 			tag.src = "https://www.youtube.com/iframe_api";
 			var firstScriptTag = document.getElementsByTagName('script')[0];
 			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-		
+
 			// 3. This function creates an <iframe> (and YouTube player)
 			//    after the API code downloads.
 			var player;
@@ -175,7 +175,7 @@
 			function onPlayerReady(event) {
 				event.target.playVideo();
 			}
-		
+
 			// 5. The API calls this function when the player's state changes.
 			//    The function indicates that when playing a video (state=1),
 			//    the player should play for six seconds and then stop.
@@ -186,11 +186,11 @@
 					done = true;
 				}
 			}
-			
+
 			function stopVideo() {
 				player.stopVideo();
 			}
-		
+
 			function playerSeekTo(player, seconds) {
 				player.seekTo(seconds);
 			}

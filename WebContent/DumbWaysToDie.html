@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 		<link href="WEB-RES/css/bootstrap.min.css" rel="stylesheet">
-		<link href="WEB-RES/images/icons/1313.ico" rel="shortcut icon" >	
+		<link href="WEB-RES/images/icons/1313.ico" rel="shortcut icon" >
 		<title>Dumb Ways To Die</title>
 	</head>
 	<body>
-		
+
 		<section id="navbar" class="text-center">
 			<nav class="navbar navbar-default" role="navigation">
 	  			<div class="container-fluid">
@@ -15,10 +15,10 @@
 	    			<div class="navbar-header">
 	      				<a class="navbar-brand" href="index.html">Home</a>
 	    			</div>
-	
+
 	    			<!-- Collect the nav links, forms, and other content for toggling -->
 	    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      				<form class="navbar-form navbar-left" role="search" action="results.jsp">
+	      				<form class="navbar-form navbar-left" role="search" action="search.html">
 	        				<div class="form-group">
 	          					<input type="text" class="form-control" name="searchValue" placeholder="Search">
 	        				</div>
@@ -32,10 +32,10 @@
 				</div><!-- /.container-fluid -->
 			</nav>
 		</section>
-		
+
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 		<div class="well">
-			<div> 
+			<div>
 				<h1><small> Dumb Ways To Die</small></h1>
 			</div>
 			<table class="table">
@@ -362,7 +362,7 @@ trains. </a>
 <a href="#" onclick="playerSeekTo (player,178); return false">message
 from Metro</a>
 							</div>
-						</div>	
+						</div>
 					</td>
 				</tr>
 			</table>
@@ -380,16 +380,16 @@ from Metro</a>
 		                </div>
 	                </div>
 	            </div>
-	        </div>   
+	        </div>
         </section>
 		<script>
 			// 2. This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');
-		
+
 			tag.src = "https://www.youtube.com/iframe_api";
 			var firstScriptTag = document.getElementsByTagName('script')[0];
 			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-		
+
 			// 3. This function creates an <iframe> (and YouTube player)
 			//    after the API code downloads.
 			var player;
@@ -412,7 +412,7 @@ from Metro</a>
 			function onPlayerReady(event) {
 				event.target.playVideo();
 			}
-		
+
 			// 5. The API calls this function when the player's state changes.
 			//    The function indicates that when playing a video (state=1),
 			//    the player should play for six seconds and then stop.
@@ -426,7 +426,7 @@ from Metro</a>
 			function stopVideo() {
 				player.stopVideo();
 			}
-		
+
 			function playerSeekTo(player, seconds) {
 				player.seekTo(seconds);
 			}
